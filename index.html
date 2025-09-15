@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiagnosLab x Loop Health Partnership Proposal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+        .slide {
+            scroll-snap-align: start;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem 2rem;
+        }
+        /* Custom Loop Health Colors */
+        .loop-green { color: #004d40; }
+        .bg-loop-green { background-color: #004d40; }
+        .border-loop-green { border-color: #004d40; }
+        .bg-loop-light-green { background-color: #e0f2f1; }
+        
+        .slide-content {
+            max-width: 1200px;
+            margin: auto;
+            width: 100%;
+        }
+
+        .controls {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            border-radius: 999px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 100;
+        }
+
+        .control-btn, .slide-indicator {
+            padding: 8px 16px;
+            border-radius: 999px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            background-color: white;
+            transition: all 0.2s ease;
+        }
+        
+        .control-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        .slide-indicator {
+            cursor: default;
+        }
+
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <main>
+        <!-- Slide 1: Title Slide -->
+        <section id="slide-1" class="slide bg-gray-100 text-center">
+            <div class="slide-content">
+                <div class="flex justify-center items-center gap-4 mb-8">
+                     <img src="https://placehold.co/150x50/004d40/FFFFFF?text=DiagnosLab" alt="DiagnosLab Logo" class="h-12">
+                     <span class="text-4xl font-bold loop-green">&times;</span>
+                     <img src="https://assets.brandfetch.io/c9894e6c738e4a9/id4Vo6aTfF.svg" alt="Loop Health Logo" class="h-12">
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold loop-green">DiagnosLab x Loop Health</h1>
+                <p class="mt-4 text-2xl md:text-3xl text-gray-700">From Risk Detection to Personalized Prevention</p>
+                <p class="mt-8 text-lg text-gray-500">A Partnership Proposal</p>
+            </div>
+        </section>
+
+        <!-- Slide 2: The Shared Vision -->
+        <section id="slide-2" class="slide bg-white">
+            <div class="slide-content grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold loop-green">Our Shared Vision: A Healthier Indonesia</h2>
+                    <div class="mt-8 space-y-6 text-lg">
+                        <div>
+                            <h3 class="font-bold text-xl text-gray-900">DiagnosLab – Leader in Diagnostics</h3>
+                            <p>Trusted expertise in laboratory testing, medical check-ups, and genomics.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl text-gray-900">Loop Health – Specialist in Digital Engagement</h3>
+                            <p>Proven results in driving long-term engagement for chronic disease management and prevention.</p>
+                        </div>
+                        <hr class="border-t-2 border-loop-green my-6">
+                        <div>
+                            <h3 class="font-bold text-2xl loop-green">Together:</h3>
+                            <p class="text-xl">We will create the leading ecosystem for preventive and precision health, offering Indonesians a seamless journey from early detection to sustained wellness.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x400/e0f2f1/004d40?text=Collaboration" alt="Healthcare professionals collaborating" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: The Integrated Patient Journey -->
+        <section id="slide-3" class="slide bg-gray-100">
+            <div class="slide-content text-center">
+                <h2 class="text-4xl md:text-5xl font-bold loop-green">The Integrated Patient Journey</h2>
+                <p class="mt-4 text-xl text-gray-600 max-w-4xl mx-auto">A seamless flow connecting diagnostics with daily support and long-term care.</p>
+                <div class="mt-12 relative">
+                    <!-- Connecting line -->
+                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-loop-green opacity-20" style="transform: translateY(-50%);"></div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 text-center relative">
+                        <!-- Step 1 -->
+                        <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-lg">
+                             <div class="w-16 h-16 bg-loop-light-green rounded-full flex items-center justify-center text-3xl font-bold loop-green mb-3">1</div>
+                            <h3 class="text-xl font-bold">Risk Awareness</h3>
+                            <p class="mt-1 text-gray-600 flex-grow">Digital screening via QR codes & WhatsApp links.</p>
+                            <span class="mt-4 text-sm font-bold bg-blue-100 text-blue-800 py-1 px-3 rounded-full">In-Clinic & Digital</span>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-lg">
+                             <div class="w-16 h-16 bg-loop-light-green rounded-full flex items-center justify-center text-3xl font-bold loop-green mb-3">2</div>
+                            <h3 class="text-xl font-bold">Risk Stratification</h3>
+                            <p class="mt-1 text-gray-600 flex-grow">Automated results direct patients to the right care bundle.</p>
+                             <span class="mt-4 text-sm font-bold bg-purple-100 text-purple-800 py-1 px-3 rounded-full">Digital (Automated)</span>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-lg">
+                           <div class="w-16 h-16 bg-loop-light-green rounded-full flex items-center justify-center text-3xl font-bold loop-green mb-3">3</div>
+                            <h3 class="text-xl font-bold">Enrollment</h3>
+                            <p class="mt-1 text-gray-600 flex-grow">Confirm risk with DiagnosLab tests & onboard with Loop.</p>
+                            <span class="mt-4 text-sm font-bold bg-green-100 text-green-800 py-1 px-3 rounded-full">In-Clinic & CS</span>
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-lg">
+                            <div class="w-16 h-16 bg-loop-light-green rounded-full flex items-center justify-center text-3xl font-bold loop-green mb-3">4</div>
+                            <h3 class="text-xl font-bold">Engagement</h3>
+                            <p class="mt-1 text-gray-600 flex-grow">Daily coaching and health logging via the Loop app.</p>
+                             <span class="mt-4 text-sm font-bold bg-yellow-100 text-yellow-800 py-1 px-3 rounded-full">Digital (App)</span>
+                        </div>
+                        <!-- Step 5 -->
+                        <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-lg">
+                            <div class="w-16 h-16 bg-loop-light-green rounded-full flex items-center justify-center text-3xl font-bold loop-green mb-3">5</div>
+                            <h3 class="text-xl font-bold">Outcomes</h3>
+                            <p class="mt-1 text-gray-600 flex-grow">Track progress with scheduled, repeat DiagnosLab testing.</p>
+                            <span class="mt-4 text-sm font-bold bg-blue-100 text-blue-800 py-1 px-3 rounded-full">In-Clinic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: Bundled Offers -->
+        <section id="slide-4" class="slide bg-white">
+            <div class="slide-content">
+                <h2 class="text-4xl md:text-5xl font-bold loop-green text-center">Comprehensive Bundles for Proactive Health</h2>
+                <div class="mt-12 grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-100 p-6 rounded-lg border-l-4 border-loop-green shadow-md flex flex-col">
+                        <h3 class="text-2xl font-bold loop-green">A. Prevention Package</h3>
+                        <p class="mt-2"><strong>Target:</strong> Individuals at risk of prediabetes.</p>
+                        <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside flex-grow">
+                            <li><strong>1x Foundational MCU Blood Test:</strong>
+                                <ul class="list-none pl-4 mt-1 text-sm text-gray-600">
+                                    <li><strong>&bull; HbA1c:</strong> An average of your blood sugar over the past 2-3 months, key for prediabetes screening.</li>
+                                </ul>
+                            </li>
+                            <li>3-month Loop Digital Prevention Program</li>
+                            <li>Personalized Lifestyle Coaching</li>
+                            <li>Weight Management & Daily Engagement</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg border-l-4 border-loop-green shadow-md flex flex-col">
+                        <h3 class="text-2xl font-bold loop-green">B. Diabetes Care Package</h3>
+                        <p class="mt-2"><strong>Target:</strong> Individuals with confirmed diabetes (HbA1c ≥ 6.5%).</p>
+                        <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside flex-grow">
+                           <li><strong>3/6/12-Month Programs</strong> with scheduled HbA1c tests</li>
+                           <li class="list-none mt-2">
+                                <strong class="text-gray-800">Optional Comprehensive Metabolic Care:</strong>
+                                <ul class="list-disc list-inside pl-4 mt-1 text-sm">
+                                    <li><strong>Lipid Profile:</strong> TC, LDL, HDL, TG</li>
+                                    <li><strong>Kidney Function:</strong> Creatinine, eGFR, Urine Albumin</li>
+                                    <li><strong>Liver Function:</strong> AST/ALT</li>
+                                    <li>BP, BMI & Waist Circumference Tracking</li>
+                                </ul>
+                           </li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg border-l-4 border-loop-green shadow-md flex flex-col">
+                        <h3 class="text-2xl font-bold loop-green">C. Corporate Wellness Package</h3>
+                        <p class="mt-2"><strong>Target:</strong> Employers focused on employee health.</p>
+                        <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside flex-grow">
+                            <li>On-site Employee Screenings</li>
+                            <li>Free Calculator Access for all staff</li>
+                            <li>Risk-based Program Enrollment (DPP/DMP)</li>
+                            <li>"Diabetes 101" Health Talk by Loop</li>
+                            <li>Monthly Outcome Reporting</li>
+                            <li>Optional Annual Follow-ups & Workshops</li>
+                        </ul>
+                    </div>
+                    <div class="bg-loop-light-green p-6 rounded-lg border-l-4 border-loop-green shadow-md flex flex-col">
+                        <h3 class="text-2xl font-bold loop-green">D. Precision Health Package (Future)</h3>
+                        <p class="mt-2"><strong>Target:</strong> Proactive individuals & corporates.</p>
+                        <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside flex-grow">
+                            <li>1x Genomics Test (Metabolic Predisposition)</li>
+                            <li>12-month Loop Program tailored to Genetic Profile</li>
+                            <li>Lifestyle coaching based on genomics + clinical data</li>
+                            <li>Annual Re-testing with DiagnosLab</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Slide 5: Benefits for DiagnosLab -->
+        <section id="slide-5" class="slide bg-gray-100">
+            <div class="slide-content grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-4xl md:text-5xl font-bold loop-green">Clear Benefits for DiagnosLab</h2>
+                    <ul class="mt-8 space-y-6 text-lg list-none">
+                        <li class="flex items-start">
+                            <span class="text-loop-green font-bold text-2xl mr-4">&#10003;</span> 
+                            <div>
+                                <h3 class="font-bold text-xl">New revenue opportunities</h3>
+                                <p class="text-gray-700">Generate additional income by bundling high-value digital programs with lab services.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-loop-green font-bold text-2xl mr-4">&#10003;</span>
+                             <div>
+                                <h3 class="font-bold text-xl">Higher patient retention</h3>
+                                <p class="text-gray-700">Encourage patients to return for follow-up tests every 3–6 months, strengthening continuity of care.</p>
+                            </div>
+                        </li>
+                         <li class="flex items-start">
+                            <span class="text-loop-green font-bold text-2xl mr-4">&#10003;</span>
+                             <div>
+                                <h3 class="font-bold text-xl">Deeper corporate engagement</h3>
+                                <p class="text-gray-700">Provide employers and insurers with a comprehensive wellness package that reduces health costs.</p>
+                            </div>
+                        </li>
+                         <li class="flex items-start">
+                            <span class="text-loop-green font-bold text-2xl mr-4">&#10003;</span>
+                             <div>
+                                <h3 class="font-bold text-xl">Brand leadership</h3>
+                                <p class="text-gray-700">Position DiagnosLab as a pioneer in personalized and preventive health in Indonesia.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-loop-green font-bold text-2xl mr-4">&#10003;</span>
+                             <div>
+                                <h3 class="font-bold text-xl">Meaningful CSR impact</h3>
+                                <p class="text-gray-700">Build public trust and recognition through a visible commitment to fighting diabetes nationwide.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-1 md:order-2">
+                     <img src="https://placehold.co/600x400/CCCCCC/004d40?text=Growth+Chart" alt="Upward revenue growth chart" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: Community & CSR -->
+        <section id="slide-6" class="slide bg-white">
+            <div class="slide-content text-center">
+                 <h2 class="text-4xl md:text-5xl font-bold loop-green">Leading the Way in National Health</h2>
+                 <p class="mt-4 text-xl text-gray-600 max-w-4xl mx-auto">Our community initiative elevates DiagnosLab as a champion of diabetes prevention, strengthening public trust and brand loyalty.</p>
+                 <div class="mt-12 grid sm:grid-cols-2 gap-8 text-left max-w-4xl mx-auto">
+                    <p class="text-xl flex items-center"><span class="text-3xl mr-4 loop-green">✅</span> <strong>Free nationwide access</strong> to the diabetes risk calculator.</p>
+                    <p class="text-xl flex items-center"><span class="text-3xl mr-4 loop-green">✅</span> <strong>Open WhatsApp community</strong> guided by Loop coaches.</p>
+                    <p class="text-xl flex items-center"><span class="text-3xl mr-4 loop-green">✅</span> <strong>Monthly health challenges</strong> to encourage healthy habits.</p>
+                    <p class="text-xl flex items-center"><span class="text-3xl mr-4 loop-green">✅</span> <strong>Co-branded talks and webinars</strong> to educate and inspire.</p>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: Pilot Plan -->
+        <section id="slide-7" class="slide bg-gray-100">
+             <div class="slide-content">
+                 <h2 class="text-4xl md:text-5xl font-bold loop-green text-center">Proposed Pilot Plan (3 Months)</h2>
+                 <p class="mt-4 text-xl text-gray-600 max-w-4xl mx-auto text-center">A focused pilot designed to validate the partnership model, measure impact, and prepare for national rollout.</p>
+                 <div class="mt-12 grid md:grid-cols-3 gap-8">
+                    <!-- Phase 1 -->
+                    <div class="md:col-span-2 bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold loop-green">Phase 1: Setup (Weeks 1–2)</h3>
+                        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-700">
+                            <div>
+                                <h4 class="font-bold">Co-branding:</h4>
+                                <ul class="list-disc list-inside mt-2">
+                                    <li>Customize calculator</li>
+                                    <li>Prepare marketing materials</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Bundle Finalization:</h4>
+                                <ul class="list-disc list-inside mt-2">
+                                    <li>Confirm bundle pricing</li>
+                                    <li>Define testing protocols</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Staff Training:</h4>
+                                <ul class="list-disc list-inside mt-2">
+                                    <li>Train front-line staff</li>
+                                    <li>Develop scripts & FAQs</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">System Integration:</h4>
+                                <ul class="list-disc list-inside mt-2">
+                                    <li>Set up referral workflows</li>
+                                    <li>Ensure data consent process</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Phases 2 & 3 -->
+                    <div class="space-y-8">
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold loop-green">Phase 2: Launch<br><span class="text-lg text-gray-500 font-normal">(Weeks 3-8)</span></h3>
+                            <p class="mt-2">Launch in <strong>2 clinics & with 1 corporate partner</strong>. Activate marketing.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold loop-green">Phase 3: Measure<br><span class="text-lg text-gray-500 font-normal">(Weeks 9-12)</span></h3>
+                            <p class="mt-2">Track KPIs, gather feedback, and present results for rollout.</p>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+        </section>
+
+        <!-- Slide 8: KPI Framework -->
+        <section id="slide-8" class="slide bg-white">
+            <div class="slide-content">
+                <h2 class="text-4xl md:text-5xl font-bold loop-green text-center">Comprehensive KPI Framework for Success</h2>
+                <p class="mt-4 text-xl text-gray-600 max-w-4xl mx-auto text-center">Tracking key metrics across the entire funnel to ensure partnership success and tangible health outcomes.</p>
+                <div class="mt-12 grid md:grid-cols-2 gap-x-12 gap-y-8 max-w-4xl mx-auto">
+                   <ul class="space-y-3 text-lg list-disc list-inside">
+                        <li>Calculator Scans & Completion Rate</li>
+                        <li>Conversion Rate: Risk-Positive → Lab Test</li>
+                        <li>Conversion Rate: Lab Test → Program Enrollment</li>
+                        <li>Average HbA1c Reduction</li>
+                        <li>Weight & BMI Reduction</li>
+                        <li>Blood Pressure & Lipid Profile Improvement</li>
+                   </ul>
+                   <ul class="space-y-3 text-lg list-disc list-inside">
+                        <li>Monthly App Engagement & Retention</li>
+                        <li>Coach Consultations per User</li>
+                        <li>Scheduled Lab Test Adherence Rate</li>
+                        <li>Repeat Test Rate for Program Members</li>
+                        <li>Community Group Growth & Engagement</li>
+                        <li>Cost Per Acquired Member</li>
+                   </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 9: Next Steps -->
+        <section id="slide-9" class="slide bg-loop-green text-white text-center">
+            <div class="slide-content">
+                 <h1 class="text-5xl md:text-6xl font-bold">Let's Build the Future of Health, Together.</h1>
+                 <p class="mt-6 text-2xl text-gray-200">We are ready to partner with DiagnosLab to make a lasting impact on the health of Indonesia.</p>
+                 <div class="mt-12">
+                     <h3 class="text-3xl font-bold">Next Steps:</h3>
+                     <div class="mt-6 text-xl space-y-3 max-w-md mx-auto text-left">
+                         <p><span class="font-bold">1.</span> Agree on pilot scope and commercials.</p>
+                         <p><span class="font-bold">2.</span> Establish a joint project team.</p>
+                         <p><span class="font-bold">3.</span> Begin pilot implementation in Q4 2025.</p>
+                     </div>
+                 </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Navigation Controls -->
+    <div class="controls">
+        <button id="prevBtn" class="control-btn">&larr; Prev</button>
+        <span id="slideIndicator" class="slide-indicator">1 / 9</span>
+        <button id="nextBtn" class="control-btn">Next &rarr;</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const slideIndicator = document.getElementById('slideIndicator');
+            let currentSlide = 0;
+
+            function updateSlideIndicator() {
+                slideIndicator.textContent = `${currentSlide + 1} / ${slides.length}`;
+            }
+
+            function goToSlide(slideIndex) {
+                if (slideIndex >= 0 && slideIndex < slides.length) {
+                    slides[slideIndex].scrollIntoView({ behavior: 'smooth' });
+                    currentSlide = slideIndex;
+                    updateSlideIndicator();
+                }
+            }
+
+            prevBtn.addEventListener('click', () => {
+                goToSlide(currentSlide - 1);
+            });
+
+            nextBtn.addEventListener('click', () => {
+                goToSlide(currentSlide + 1);
+            });
+
+            // Update indicator on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const slideIndex = Array.from(slides).indexOf(entry.target);
+                        currentSlide = slideIndex;
+                        updateSlideIndicator();
+                    }
+                });
+            }, { threshold: 0.6 });
+
+            slides.forEach(slide => {
+                observer.observe(slide);
+            });
+
+            updateSlideIndicator();
+        });
+    </script>
+
+</body>
+</html>
+
