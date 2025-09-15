@@ -124,10 +124,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="text-center bg-gray-100 p-8 rounded-lg">
-                    <img src="https://placehold.co/200x200/004d40/FFFFFF?text=QR+Code" alt="QR Code for Diabetes Risk Screener" class="mx-auto rounded-lg shadow-lg">
-                    <p class="mt-4 font-bold text-lg loop-green">Scan to Check Your Risk</p>
-                    <p class="text-gray-600">Get your results in 1 minute.</p>
+                <div class="text-center bg-gray-100 p-4 rounded-lg h-[600px] flex flex-col">
+                    <h3 class="text-lg font-bold loop-green mb-2">Live Demo: Diabetes Risk Screener</h3>
+                    <div class="flex-grow border-4 border-gray-300 rounded-xl overflow-hidden shadow-lg">
+                        <iframe src="https://www.loophealth.id/diabetes-calculator" class="w-full h-full" title="Live Diabetes Calculator Demo"></iframe>
+                    </div>
                 </div>
             </div>
         </section>
@@ -141,7 +142,7 @@
                     <div class="bg-white p-6 rounded-lg shadow">
                         <h3 class="text-2xl font-bold text-gray-800">New Customers</h3>
                         <div class="mt-4 space-y-3">
-                            <p><strong>Flow A (Screener → MCU → Bundle):</strong> Start with QR/WhatsApp screener → High risk gets HbA1c/bundle → MCU confirms → Enroll in DPP/DMP.</p>
+                            <p><strong>Flow A (Screener → MCU → Bundle):</strong> A customer starts with the QR/WhatsApp screener. A Medium/High risk result prompts them to get an HbA1c test or purchase a bundle. The MCU confirms their status, and they enroll in the appropriate program (DPP/DMP).</p>
                             <p><strong>Flow B (Direct MCU → Bundle):</strong> Customer does MCU → Results show prediabetes/diabetes → Enroll in the appropriate bundle (DPP or DMP).</p>
                         </div>
                     </div>
@@ -149,7 +150,7 @@
                          <h3 class="text-2xl font-bold text-gray-800">Existing Customers</h3>
                         <div class="mt-4 space-y-3">
                            <p><strong>Flow C (Data Outreach → Bundle):</strong> Identified via past data → CS outreach invites to bundle.</p>
-                           <p><strong>Flow D (Direct Enrollment):</strong> Known risk/diabetes → Joins appropriate Care Bundle (DPP or DMP) directly.</p>
+                           <p><strong>Flow D (Direct Enrollment):</strong> Customers with a known risk, such as prediabetes (HbA1c 5.7% - 6.4%) or diabetes (HbA1c &gt; 6.5%), can join the appropriate Care Bundle (DPP or DMP) directly.</p>
                         </div>
                     </div>
                 </div>
@@ -200,7 +201,7 @@
                     <!-- Preventive Health -->
                     <div class="bg-white p-6 rounded-lg shadow-lg">
                         <h3 class="text-2xl font-bold loop-green">Preventive Health (DPP)</h3>
-                        <p class="mt-1 text-gray-600">For at-risk or prediabetes.</p>
+                        <p class="mt-1 text-gray-600">For prediabetes (HbA1c 5.7-6.4%), high BMI (&gt;26), or other risk factors.</p>
                         <div class="mt-4 space-y-4">
                             <div class="bg-gray-50 p-4 rounded-md">
                                 <h4 class="font-bold">Base Bundle (6 or 12 months)</h4>
@@ -210,14 +211,15 @@
                             <div class="bg-gray-50 p-4 rounded-md">
                                 <h4 class="font-bold">Prevention Care Plus</h4>
                                 <p class="text-sm"><strong>Loop:</strong> Same as Base.</p>
-                                <p class="text-sm"><strong>DiagnosLab:</strong> Full metabolic panel (lipids, kidney, liver) + BP, BMI, waist circumference every 3 months.</p>
+                                <p class="text-sm"><strong>DiagnosLab:</strong> Full metabolic panel (lipids, kidney, liver) + BP & BMI every 3 months.</p>
+                                <p class="text-xs italic text-gray-500 mt-1">Builds upon the foundational tests in your existing Panel Diabetes.</p>
                             </div>
                         </div>
                     </div>
                     <!-- Diabetes Care -->
                     <div class="bg-white p-6 rounded-lg shadow-lg">
                         <h3 class="text-2xl font-bold loop-green">Diabetes Care (DMP)</h3>
-                        <p class="mt-1 text-gray-600">For confirmed diabetes (HbA1c ≥ 6.5% or FPG ≥ 126 mg/dL).</p>
+                        <p class="mt-1 text-gray-600">For confirmed diabetes (HbA1c ≥ 6.5%).</p>
                         <div class="mt-4 space-y-4">
                             <div class="bg-gray-50 p-4 rounded-md">
                                 <h4 class="font-bold">Base Bundle (6 or 12 months)</h4>
@@ -227,7 +229,8 @@
                             <div class="bg-gray-50 p-4 rounded-md">
                                 <h4 class="font-bold">Diabetes Care Plus</h4>
                                 <p class="text-sm"><strong>Loop:</strong> Same as Base + personalized nutrition guidance.</p>
-                                <p class="text-sm"><strong>DiagnosLab:</strong> Full metabolic panel + BP, BMI, waist circumference every 3 months.</p>
+                                <p class="text-sm"><strong>DiagnosLab:</strong> Full metabolic panel + BP & BMI every 3 months.</p>
+                                <p class="text-xs italic text-gray-500 mt-1">An enhanced version of your Panel Diabetes for continuous monitoring.</p>
                             </div>
                         </div>
                     </div>
@@ -402,7 +405,5 @@
 
 </body>
 </html>
-
-
 
 
